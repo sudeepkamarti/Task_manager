@@ -1,0 +1,50 @@
+<html>
+<head>
+    <title>task manager</title>
+    <link rel="stylesheet" href="../TaskManager/Assets/CSS/log_in.css">
+</head>
+<body style="background-image: url('../TaskManager/Assets/IMAGES/n.jpg');">
+    <div class="navbar">
+        <img class="logo" src="../TaskManager/Assets/IMAGES/hacker.png" alt="logo">
+    </div>
+    <div class="welcome">
+        <h1>Welcome to Task Manager</h1>
+    </div>
+    <div class="content"></div>
+    
+    <section>
+        <form id="signupForm">
+            <h2>Sign Up</h2>
+            <label for="signupUsername">Username:</label>
+            <input type="text" id="signupUsername" name="signupUsername" placeholder="Username" required oninput="enableSignupButton()">
+
+            <label for="signupPassword">Password:</label>
+            <input type="password" id="signupPassword" name="signupPassword" placeholder="Password" required oninput="enableSignupButton()">
+            
+            <label for="confirmPassword">Confirm Password:</label>
+            <input type="password" id="confirmPassword" name="confirmPassword" placeholder="Confirm Password" required oninput="enableSignupButton()">
+            
+            <p id="passwordMismatch" style="color: red; display: none;">Passwords do not match. Please enter the correct password.</p>
+            
+            <button type="button" id="signupBtn" onclick="validateSignUp()" disabled>Sign Up</button>
+            
+            <p class="switch-page">Already have an account? <a href="#" onclick="toggleForms('loginForm')">Login</a></p>
+        </form>
+    
+        <form id="loginForm" class="hidden-form" action="index.html">
+            <h2>Login</h2>
+            <label for="loginUsername">User Name:</label>
+            <input type="text" id="loginUsername" name="loginUsername" placeholder="Username" required oninput="enableLoginButton()">
+    
+            <label for="loginPassword">Password:</label>
+            <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required oninput="enableLoginButton()">
+    
+            <button type="submit" id="loginBtn"  onclick="validateLogin()" disabled>Login</button>
+    
+            <p class="switch-page">Don't have an account? <a href="#" onclick="toggleForms('signupForm')">Sign Up</a></p>
+        </form>
+    </section>
+    
+    <script src="../TaskManager/Assets/JS/log_in.js"></script>
+</body>
+</html>    

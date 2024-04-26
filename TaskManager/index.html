@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link rel="stylesheet" href="../TaskManager/Assets/CSS/style.css">
+</head>
+<body style="background-image: url(../TaskManager/Assets/IMAGES/i.jpg);">
+    <header>
+        <div class="heading">
+            <img src="../TaskManager/Assets/IMAGES/project-management.png" alt="Task Manager Logo" class="logo">
+            <h1 class="hd">Task Manager✅</h1>
+        </div>
+        
+    </header>
+    <nav>   
+        <a href="#" onclick="showSection('homeSection')" class="active">Home</a>
+        <a href="#" onclick="showSection('taskSection')">Add Task</a>
+        <a href="#" onclick="showSection('progressSection')">Task Progress</a>
+        <a href="#" onclick="showSection('completedSection')">Completed Tasks</a>
+        <a href="#" onclick="showSection('statusSection')">Status</a>
+        <a href="#" onclick="showSection('deletedSection')">Deleted Tasks</a>
+    </nav>
+    
+    <main>
+        <section id="homeSection">
+            <h2 id="slogan">Your tasks, your way!</h2>
+        </section>
+
+        <section id="taskSection">
+            <h2>Add Task</h2>
+            <input type="text" id="taskName" placeholder="Task Name">
+            <select id="priority" placeholder="Top Priority">
+                <option value="top">Top Priority</option>
+                <option value="middle">Middle Priority</option>
+                <option value="low">Less Priority</option>
+            </select>
+            <input type="date" id="deadline" placeholder="Deadline">
+            <button onclick="addTask()">Add Task</button>
+            
+            <table id="taskTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Task Name</th>
+                        <th>Priority</th>
+                        <th>Deadline</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="taskTableBody"></tbody>
+            </table>
+        </section>
+
+        <section id="progressSection">
+            <h2>Task in Progress</h2>
+            <button class="filter" onclick="filterProgressTasks()">Filter</button>
+            <div class="search-container">
+                <input type="text" id="searchInput" placeholder="Search tasks..." oninput="searchTasks()">
+             </div>
+            <table id="progressTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Task Name</th>
+                        <th>Priority</th>
+                        <th>Deadline</th>
+                        <th class="action">Action</th>
+                        <th>Progress</th>
+                        <th class="timerim">time riminder</th>
+                    </tr>
+                </thead>
+                <tbody id="progressTableBody"></tbody>
+            </table>
+        </section>
+        <section id="statusSection" style="display: none;">
+            <h2>Status Section</h2>
+        
+            <!-- Box 1 -->
+            <div class="box">
+                <!-- Box 1 -->
+            <div class="box" id="box1">
+                <img src="../TaskManager/Assets/IMAGES/stopwatch.png" alt="Timer Icon" class="timerIcon">
+            <h3>Total progress tasks</h3>
+            <p class="taskCount"><span id="tasksInProgress">0</span></p>
+            </div>
+
+                <!-- Content for Box 1 -->
+            </div>
+        
+            <!-- Box 2 -->
+            <div class="box">
+                <div class="box" id="box2">
+                    <img src="../TaskManager/Assets/IMAGES/completed-task.png" alt="COMPLETE ICON" class="timerIcon">
+                    <h3>completed tasks</h3>
+                    <p class="taskCount"><span id="completedTasks">0</span></p>
+
+                    </div>
+                <!-- Content for Box 2 -->
+            </div>
+        
+            <!-- Box 3 -->
+            <div class="box">
+                <div class="box" id="box3">
+                    <img src="../TaskManager/Assets/IMAGES/sand-clock.png" alt="INACTIVATE" class="timerIcon">
+                    <h3>inactiveTasks</h3>
+                    <p class="taskCount"><span id="inactiveTasks">0</span></p>
+
+                    </div>
+            </div>
+        </section>
+        
+
+        <section id="completedSection">
+            <h2>Completed Tasks</h2>
+            <table id="completedTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Task Name</th>
+                        <th>Priority</th>
+                        <th>Deadline</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="completedTableBody"></tbody>
+            </table>
+        </section>
+
+        <section id="deletedSection">
+            <h2>Deleted Tasks</h2>
+            <table id="deletedTable">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Task Name</th>
+                        <th>Priority</th>
+                        <th>Deadline</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="deletedTableBody"></tbody>
+            </table>
+        </section>
+    </main>
+    
+
+    <script src="../TaskManager/Assets/JS/index.js"></script>
+</body>
+</html>

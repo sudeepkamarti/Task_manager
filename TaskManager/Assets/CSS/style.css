@@ -1,0 +1,343 @@
+
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: rgb(30, 105, 86);
+    color: white;
+    text-align: center;
+    transform: 30%;
+    padding: 1em;
+    margin-left: -8PX;
+}
+
+.hd{
+    text-align: center;
+    margin-top: 10px;
+}
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 1em;
+        }
+        nav {
+            position: fixed;
+            top: 100px; 
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            background-color: rgb(70, 173, 148);
+            color: white;   ;
+            padding: 1em;
+            margin-left: -10PX;
+        }
+
+        nav a {
+            text-align: center;
+            
+            text-decoration: none;
+            margin: 0 1em;
+            font-weight: bold;
+            width: 150px;
+            text-decoration: none;
+            opacity:0.9;
+            color:white;
+            text-decoration:none;
+
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            border-top: 1px solid rgba(225,225,225,0.05);
+            border-radius: 3px;
+        }
+
+
+
+
+
+        nav a:hover{
+            background: rgb(30, 105, 86);
+            padding: auto;
+            color: black;
+        }
+        nav:hover a{
+            color: black;
+        }
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 1em;
+        }
+
+        section {
+            width: 70%;
+            padding: 1em;
+            margin: 1em;
+            background-color: white;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        #homeSection {
+            display: none;
+        }
+
+        #taskSection, #progressSection, #completedSection, #deletedSection {
+            display: none;
+        }
+
+        #slogan {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            color: #333;
+            text-align: center;
+        }
+
+      
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+
+th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+    padding: 8px;
+}
+
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+
+td {
+    padding: 8px;
+}
+
+
+
+        
+
+        .button-container {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .activateButton,
+.deleteButton,
+.restoreButton,
+.updateButton {
+  transition: all 0.4s ease;
+  background-color: #ddd;
+}
+
+.activateButton:hover,
+.restoreButton:hover,
+.updateButton:hover {
+  transform: scale(1.1);
+  background-color:rgb(78, 221, 78);
+  color: white;
+}
+
+.deleteButton:hover{
+    transform: scale(1.1);
+    color: white;
+    background-color:rgb(170, 36, 36);
+}
+
+        .progress-bar {
+            height: 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            line-height: 20px;
+            animation: 8s linear forwards;
+        }
+
+        .updateButton, .progress-bar {
+            display: none;
+        }
+
+        #progressSection .updateButton,
+        #progressSection .progress-bar {
+            display: block;
+        }
+
+        .completedButton {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+        }
+
+
+    
+
+
+
+main {
+    margin-top: 140px; 
+    
+}
+
+.filter{
+    
+    margin-left: 840px;
+    width: 80PX;
+    height: 20PX;
+    background-color:#777;
+    cursor: pointer;
+    border-radius: 5px;
+
+}
+
+
+.filter:hover{
+    background-color: #444;
+    color:whitesmoke;
+}
+.search-container{
+    margin-left: 655px;
+    margin-top: -20px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+
+.progress-bar {
+    height: 20px;
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    line-height: 20px;
+    animation: progressAnimation 8s linear forwards; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+
+
+nav a.active {
+    color: #ff0000; 
+    border-bottom: 2px solid #ff0000;
+    background-color: #FFF; 
+}
+.action{
+    width:20px;
+}
+
+body{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.priority-cell {
+    padding: 5px;
+    text-align: center;
+}
+
+.low-priority {
+    background-color: rgb(210, 166, 232);
+    width: 10%;
+    max-height: 4%;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+}
+
+
+.middle-priority {
+    background-color: rgb(165, 233, 245); 
+    width: 10%;
+    max-height: 6%;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+}
+
+.top-priority {
+    background-color: rgb(139, 241, 148);
+    width: 10%;
+    max-height: 6%;
+    border: 3px solid whitesmoke;
+    border-radius: 10px;
+}
+
+
+.box {
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    transition: transform 0.3s ease-in-out;
+}
+
+.box:hover {
+    transform: translateY(-5px); 
+}
+
+.box h3 {
+    margin-top: 0;
+    font-size: 20px;
+    color: #333;
+}
+
+.taskCount {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff; 
+    background-color: #ff8c00;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    line-height: 60px; 
+    margin: 20px auto;
+    box-shadow: 0 0 15px rgba(255, 140, 0, 0.4); 
+}
+
+.timerIcon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+    color: #f7efef; 
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5); 
+    font-size: 24px; 
+    letter-spacing: 1px;
+    padding: 0px; 
+}
+
+
+.logo {
+    width: 80px; 
+    height: auto; 
+    margin-right: 10px; 
+    margin-top: -20px;
+}
+.timerim{
+    text-align: left;
+    margin-left: 30%;
+    font-size: medium;
+    color:solid black;
+    width: 20%;
+}
+
+
+
+

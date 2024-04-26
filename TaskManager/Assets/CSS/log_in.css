@@ -1,0 +1,163 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    background-image: url("d.jpg");
+    background-position: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+nav {
+    margin-top: 30px;
+    margin-left: 35px;
+    animation: fadeInOut 5s ease-in-out;
+}
+
+nav a {
+    background-color: darkgray;
+    width: 250px;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 10px;
+    color: black;
+}
+
+nav a:hover {
+    background-color: rgb(75, 72, 72);
+    color: aliceblue;
+}
+
+.logo {
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.welcome {
+    opacity: 0;
+    animation: fadeInOut 5s ease-in-out forwards;
+    margin-left: 20%;
+    font-family: 'cooper', sans-serif;
+    font-size: 30px;
+}
+
+@keyframes delayAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.welcome{
+    animation: fadeInOut 5s ease-in-out;
+    margin-top: -90px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    max-width: 300px;
+    width: 50%;
+    height: max-content;
+    text-align: center;
+    margin: 50px auto;
+}
+
+#signupUsername {
+    font-weight: bold;
+}
+
+input {
+    width: calc(100% - 16px);
+    padding: 10px;
+    margin-bottom: 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: calc(100% - 16px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+
+
+.btn {
+    margin-top: -10%;
+    background-color: #226A80;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-left: 90%;
+    cursor: pointer;
+    width: 120px;
+    transition: background-color 0.3s;
+}
+
+.btn:hover {
+    background-color: skyblue;
+    color: black;
+}
+
+.reg {
+    margin-top: -10px;
+}
+
+.hidden-form {
+    display: none;
+    width: 300px;
+    margin: 50px auto;
+}
+
+.btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+#signupBtn {
+    background-color: rgb(20, 190, 20);
+    padding: 10px;
+    width: 120px;
+    margin-top: 10px;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#signupBtn:hover {
+    background-color: #147E1E;
+}
+
+.switch-page a {
+    color: rgb(20, 190, 20);
+    font-family: 'cooper', sans-serif;
+    text-decoration: none;
+}
+
+#loginBtn a {
+    text-decoration: none;
+    color: #fff;
+}
+#loginBtn{
+    background-color: rgb(20, 190, 20);
+    color:#fff;
+    width:40%;
+    height:auto;
+}
+#loginBtn:hover {
+    background-color: #147E1E;
+}
